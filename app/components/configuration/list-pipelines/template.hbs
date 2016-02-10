@@ -1,5 +1,3 @@
-I am pipelines
-
 {{#each shownPipelines as |pipeline|}}
-  {{configuration/pipeline-card pipeline=pipeline}}
+  {{configuration/pipeline-card pipeline=pipeline select=selectPipeline}}
 {{/each}}

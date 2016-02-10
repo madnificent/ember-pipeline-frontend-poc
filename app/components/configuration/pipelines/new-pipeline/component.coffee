@@ -13,7 +13,7 @@ ConfigurationPipelinesNewPipelineComponent = Ember.Component.extend
         @set('creating', true)
         @get('pipeline').save().then => @set('creating', false)
         @initPipeline()
-        return
+      return
 
 
 `export default ConfigurationPipelinesNewPipelineComponent`
