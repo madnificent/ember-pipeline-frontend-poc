@@ -1,0 +1,7 @@
+I am pipelines
+
+<ul>
+  {{#each shownPipelines as |pipeline|}}
+    <li>{{pipeline.title}} {{#if pipeline.dirtyType}}(To be {{pipeline.dirtyType}}){{/if}}</li>
+  {{/each}}
+</ul>
