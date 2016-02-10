@@ -10,7 +10,8 @@ Router.map ->
   @route 'configuration', ->
     @route 'pipelines', ->
       @route 'new'
-      @route 'pipeline', path: "/:pipeline_id"
-        
+      @route 'pipeline', path: "/:pipeline_id", ->
+        @route 'steps'
+
 
 `export default Router`
