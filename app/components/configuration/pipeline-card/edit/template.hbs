@@ -1,0 +1,8 @@
+<dl>
+  <dt>title</dt><dd>{{input value=pipeline.title}}</dd>
+  <dt>description</dt><dd>{{textarea value=pipeline.description}}</dd>
+</dl>
+
+{{#if pipeline.hasDirtyAttributes}}
+  <button {{action "save"}}>Save</button>
+{{/if}}
