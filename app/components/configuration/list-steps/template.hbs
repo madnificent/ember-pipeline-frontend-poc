@@ -1,5 +1,3 @@
-<ul>
-  {{#each sortedSteps as |step|}}
-    <li>{{step.title}} ({{step.order}})</li>
-  {{/each}}
-</ul>
+{{#each sortedSteps as |step|}}
+  {{configuration/step-card step=step}}
+{{/each}}
