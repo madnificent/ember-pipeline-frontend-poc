@@ -1,0 +1,10 @@
+<dl>
+  <dt>Title</dt><dd>{{input value=step.title}}</dd>
+  <dt>Description</dt><dd>{{input value=step.description}}</dd>
+  <dt>Order</dt><dd>{{input value=step.order type="number"}}</dd>
+  <dt>Status</dt><dd>{{input value=step.status}}</dd>
+</dl>
+
+{{#if step.hasDirtyAttributes}}
+  <button {{action "save"}}>Save</button>
+{{/if}}

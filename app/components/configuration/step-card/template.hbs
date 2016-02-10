@@ -1,2 +1,7 @@
-<h4>{{step.title}} (nr {{step.order}}, {{step.status}})</h4>
-<p>{{step.description}}</p>
+{{#if editing}}
+  {{configuration/step-card/edit step=step onSave=(action "toggleEdit")}}
+  {{else}}
+  {{configuration/step-card/show step=step}}
+{{/if}}
+
+<button {{action "toggleEdit"}}>{{#if editing}}Show{{else}}Edit{{/if}}</button>
