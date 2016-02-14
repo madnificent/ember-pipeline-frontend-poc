@@ -1,0 +1,7 @@
+{{#if editing}}
+  {{configuration/step-collection-item/edit step=step onSave=(action "toggleEdit")}}
+  {{else}}
+  {{configuration/step-collection-item/show step=step}}
+{{/if}}
+
+<button {{action "toggleEdit"}}>{{#if editing}}Show{{else}}Edit{{/if}}</button>
