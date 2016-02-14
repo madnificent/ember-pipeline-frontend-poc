@@ -1,2 +1,7 @@
-<h4 {{action "select"}}>{{pipeline.title}}</h4>
+<span class="title" {{action "select"}}>{{pipeline.title}}</span>
+{{#if editable}}
+  <div class="secondary-content" {{action "triggerEdit"}}>
+    <i class="mdi-editor-mode-edit"></i>
+  </div>
+{{/if}}
 <p>{{pipeline.description}}</p>

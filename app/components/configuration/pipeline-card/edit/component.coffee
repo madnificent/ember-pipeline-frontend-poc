@@ -5,6 +5,9 @@ ConfigurationPipelineCardEditComponent = Ember.Component.extend
     save: ->
       @get('pipeline').save()
       return
+    triggerEdit: ->
+      @get('editable')?()
+      return
 
 
 `export default ConfigurationPipelineCardEditComponent`

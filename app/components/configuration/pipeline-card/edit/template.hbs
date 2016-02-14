@@ -1,8 +1,11 @@
-<dl>
-  <dt>title</dt><dd>{{input value=pipeline.title}}</dd>
-  <dt>description</dt><dd>{{textarea value=pipeline.description}}</dd>
-</dl>
-
+<!-- <i class="circle green mdi-action-favorite"></i> -->
+{{#if editable}}
+  <div class="secondary-content" {{action "triggerEdit"}}>
+    <i class="mdi-editor-mode-edit"></i>
+  </div>
+{{/if}}
+<span class="title">{{input value=pipeline.title}}</span>
+<p>{{textarea value=pipeline.description}}</p>
 {{#if pipeline.hasDirtyAttributes}}
-  <button {{action "save"}}>Save</button>
+  {{md-btn-submit icon='mdi-action-save' iconPosition='right' text='Save' action="save"}}
 {{/if}}

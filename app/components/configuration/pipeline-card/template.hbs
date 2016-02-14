@@ -1,9 +1,5 @@
 {{#if editing}}
-  {{configuration/pipeline-card/edit pipeline=pipeline}}
+  {{configuration/pipeline-card/edit pipeline=pipeline editable=editableAction}}
   {{else}}
-  {{configuration/pipeline-card/show pipeline=pipeline select=select}}
-{{/if}}
-
-{{#if editable}}
-  <button {{action "toggleEdit"}}>{{#if editing}}show{{else}}edit{{/if}}</button>
+  {{configuration/pipeline-card/show pipeline=pipeline select=select editable=editableAction}}
 {{/if}}

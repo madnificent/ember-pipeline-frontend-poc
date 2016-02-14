@@ -1,11 +1,11 @@
 `import Ember from 'ember'`
 
 ConfigurationPipelineCardComponent = Ember.Component.extend
-  classNames: 'pipeline-card'
+  classNames: ['pipeline-card','collection-item']
   editable: true
-  actions:
-    toggleEdit: ->
-      @toggleProperty 'editing'
-      return
+  editableAction: Ember.computed 'editable', ->
+    if @get('editable')
+      () => @toggleProperty 'editing'
+
 
 `export default ConfigurationPipelineCardComponent`

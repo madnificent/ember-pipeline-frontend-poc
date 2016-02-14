@@ -9,3 +9,13 @@ $secondary-color: color("pink", "accent-4");
 @import 'components/variables';
 @import 'materialize';
 @import 'ember-cli-materialize';
+
+.collection-item {
+    .title {
+        color: $secondary-color;
+        font-weight: bold;
+    }
+    p {
+        color: color("grey", "darken-3");
+    }
+}

@@ -1,3 +1,3 @@
-{{#each shownPipelines as |pipeline|}}
+{{#md-collection content=shownPipelines as |pipeline|}}
   {{configuration/pipeline-card pipeline=pipeline select=selectPipeline}}
-{{/each}}
+{{/md-collection}}

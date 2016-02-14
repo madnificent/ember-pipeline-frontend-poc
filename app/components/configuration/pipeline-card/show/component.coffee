@@ -6,6 +6,8 @@ ConfigurationPipelineCardShowComponent = Ember.Component.extend
     select: ->
       @get('select')? @get('pipeline')
       return
+    triggerEdit: ->
+      @get('editable')?()
 
 
 `export default ConfigurationPipelineCardShowComponent`
