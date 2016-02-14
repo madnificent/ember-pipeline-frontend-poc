@@ -1,5 +1,12 @@
-<h1>All pipelines</h1>
+<div class="container">
+  <h1>Known pipelines</h1>
 
-{{configuration/list-pipelines pipelines=model selectPipeline=(action "openPipeline")}}
+  <p>This page shows all stored pipelines.  It provides a way of manually editing the pipelines, so they can later be exported from the triplestore.</p>
 
-{{configuration/pipelines/new-pipeline}}
+</div>
+
+<div class="container">
+  {{configuration/list-pipelines pipelines=model selectPipeline=(action "openPipeline")}}
+
+  {{configuration/pipelines/new-pipeline}}
+</div>
