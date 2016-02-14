@@ -1,0 +1,5 @@
+{{#if editing}}
+  {{configuration/pipeline-collection-item/edit pipeline=pipeline editable=editableAction}}
+  {{else}}
+  {{configuration/pipeline-collection-item/show pipeline=pipeline select=select editable=editableAction}}
+{{/if}}

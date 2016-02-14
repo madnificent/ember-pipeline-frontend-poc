@@ -1,7 +1,11 @@
-<h1>All steps</h1>
+<div class="container">
+  <h3>Steps in this pipeline</h3>
+  {{configuration/list-steps steps=model}}
+</div>
 
-{{configuration/list-steps steps=model}}
-
-{{configuration/new-step pipeline=pipeline}}
+<div class="container">
+  <h3>Add step</h3>
+  {{configuration/new-step pipeline=pipeline}}
+</div>
 
 {{outlet}}

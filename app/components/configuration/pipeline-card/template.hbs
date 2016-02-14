@@ -1,5 +1,3 @@
-{{#if editing}}
-  {{configuration/pipeline-card/edit pipeline=pipeline editable=editableAction}}
-  {{else}}
-  {{configuration/pipeline-card/show pipeline=pipeline select=select editable=editableAction}}
-{{/if}}
+{{#md-card title=pipeline.title}}
+  {{#md-card-content}}{{pipeline.description}}{{/md-card-content}}
+{{/md-card}}

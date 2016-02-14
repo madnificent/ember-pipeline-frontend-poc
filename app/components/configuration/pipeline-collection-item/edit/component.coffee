@@ -1,6 +1,6 @@
 `import Ember from 'ember'`
 
-ConfigurationPipelineCardEditComponent = Ember.Component.extend
+ConfigurationPipelineCollectionItemEditComponent = Ember.Component.extend
   actions:
     save: ->
       @get('pipeline').save()
@@ -10,4 +10,4 @@ ConfigurationPipelineCardEditComponent = Ember.Component.extend
       return
 
 
-`export default ConfigurationPipelineCardEditComponent`
+`export default ConfigurationPipelineCollectionItemEditComponent`

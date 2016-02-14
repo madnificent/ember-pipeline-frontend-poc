@@ -1,6 +1,6 @@
 `import Ember from 'ember'`
 
-ConfigurationPipelineCardShowComponent = Ember.Component.extend
+ConfigurationPipelineCollectionItemShowComponent = Ember.Component.extend
   classNames: 'show-pipeline'
   actions:
     select: ->
@@ -10,4 +10,4 @@ ConfigurationPipelineCardShowComponent = Ember.Component.extend
       @get('editable')?()
 
 
-`export default ConfigurationPipelineCardShowComponent`
+`export default ConfigurationPipelineCollectionItemShowComponent`
