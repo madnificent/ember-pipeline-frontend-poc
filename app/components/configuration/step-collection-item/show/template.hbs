@@ -1,3 +1,9 @@
-<h4>{{step.title}} (nr {{step.order}}, {{step.status}})</h4>
+<span class="title" {{action "select"}}>{{step.title}}</span>
+{{#if editable}}
+  <div class="secondary-content" {{action "triggerEdit"}}>
+    <i class="mdi-editor-mode-edit"></i>
+  </div>
+{{/if}}
 <p>{{step.description}}</p>
-
+<p>Order: {{step.order}}</p>
+<p>{{step.status}}</p>

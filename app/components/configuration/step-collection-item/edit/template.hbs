@@ -1,10 +1,13 @@
-<dl>
-  <dt>Title</dt><dd>{{input value=step.title}}</dd>
-  <dt>Description</dt><dd>{{input value=step.description}}</dd>
-  <dt>Order</dt><dd>{{input value=step.order type="number"}}</dd>
-  <dt>Status</dt><dd>{{input value=step.status}}</dd>
-</dl>
+<span class="title" {{action "select"}}>{{input value=step.title}}</span>
+{{#if editable}}
+  <div class="secondary-content" {{action "triggerEdit"}}>
+    <i class="mdi-editor-mode-edit"></i>
+  </div>
+{{/if}}
+{{textarea value=step.description}}
+<p>Order: {{input value=step.order type="number"}}</p>
+<p>{{input value=step.status placeholder="status"}}</p>
 
 {{#if step.hasDirtyAttributes}}
-  <button {{action "save"}}>Save</button>
+  {{md-btn-submit icon='mdi-action-save' iconPosition='right' text='Save' action="save"}}
 {{/if}}

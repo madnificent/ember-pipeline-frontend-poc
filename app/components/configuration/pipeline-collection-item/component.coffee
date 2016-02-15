@@ -1,7 +1,7 @@
 `import Ember from 'ember'`
 
 ConfigurationPipelineCollectionItemComponent = Ember.Component.extend
-  classNames: ['pipeline-card','collection-item']
+  classNames: ['pipeline-item','collection-item']
   editable: true
   editableAction: Ember.computed 'editable', ->
     if @get('editable')

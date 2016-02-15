@@ -1,7 +1,5 @@
 {{#if editing}}
-  {{configuration/step-collection-item/edit step=step onSave=(action "toggleEdit")}}
+  {{configuration/step-collection-item/edit step=step onSave=editableAction editable=editableAction}}
   {{else}}
-  {{configuration/step-collection-item/show step=step}}
+  {{configuration/step-collection-item/show step=step editable=editableAction}}
 {{/if}}
-
-<button {{action "toggleEdit"}}>{{#if editing}}Show{{else}}Edit{{/if}}</button>
