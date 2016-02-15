@@ -19,3 +19,16 @@ $secondary-color: color("pink", "accent-4");
         color: color("grey", "darken-3");
     }
 }
+
+.step-item.collection-item {
+    label {
+        margin-right: 1em;
+        position: static;
+    }
+    pre {
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        top: 5px;
+    }
+}

@@ -6,6 +6,7 @@ Step = DS.Model.extend
   status: DS.attr()
   order: DS.attr('number')
   pipeline: DS.belongsTo('pipeline')
+  code: DS.attr()
 
 
 `export default Step`

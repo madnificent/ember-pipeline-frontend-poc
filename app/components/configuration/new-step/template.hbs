@@ -1,7 +1,13 @@
-<dl>
-  <dt>title</dt><dd>{{input value=step.title}}</dd>
-  <dt>description</dt><dd>{{textarea value=step.description}}</dd>
-  <dt>index</dt><dd>{{input type="number" value=step.order}}</dd>
-</dl>
-
-<button {{action "create"}}>Create</button>
+{{#md-card title="New step"}}
+  {{#md-card-content}}
+    {{input value=step.title placeholder="Step title"}}
+    {{textarea value=step.description placeholder="Step description"}}
+    <p>
+    Order: {{input type="number" value=step.order}}
+    </p>
+    <p>Code: {{input value=step.code placeholder="upload_files"}}</p>
+  {{/md-card-content}}
+  {{#md-card-action}}
+    {{md-btn-submit icon='mdi-action-save' iconPosition='right' text='Create' action="create"}}
+  {{/md-card-action}}
+{{/md-card}}
