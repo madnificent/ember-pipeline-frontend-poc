@@ -32,3 +32,18 @@ $secondary-color: color("pink", "accent-4");
         top: 5px;
     }
 }
+
+.active-step {
+    .badge {
+        float: right;
+        position: relative;
+        background-color: $primary-color;
+        color: white;
+        margin: 0;
+        margin-left: 1ex;
+    }
+
+    .finish-action {
+        color: $secondary-color;
+    }
+}

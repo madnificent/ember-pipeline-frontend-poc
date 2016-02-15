@@ -1,0 +1,5 @@
+{{#if model.firstObject}}
+  {{active-pipeline pipeline=model.firstObject}}
+  {{else}}
+  <span class="error">Could not find pipeline</span>
+{{/if}}

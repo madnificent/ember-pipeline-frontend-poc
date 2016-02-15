@@ -12,6 +12,4 @@ Router.map ->
       @route 'pipeline', path: "/:pipeline_id", ->
         @route 'steps'
 
-  @route 'configuration/index'
-
 `export default Router`

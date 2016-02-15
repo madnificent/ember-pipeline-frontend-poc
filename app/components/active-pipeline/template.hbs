@@ -1,0 +1,7 @@
+<div class="container">
+  {{configuration/pipeline-card pipeline=pipeline}}
+
+  {{#md-collection content=sortedSteps as |step|}}
+    {{active-pipeline/step step=step}}
+  {{/md-collection}}
+</div>

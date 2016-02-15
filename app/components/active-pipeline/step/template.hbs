@@ -1,0 +1,10 @@
+<i class="circle {{statusIcon}}"></i>
+<span class="title">{{step.title}}</span>
+{{#md-badge}}Step: {{step.order}}{{/md-badge}}
+{{#md-badge}}Code: {{step.code}}{{/md-badge}}
+<p>{{step.description}}</p>
+
+{{#if userCanFinish}}
+  <span class="finish-action" {{action "finish"}}>Finish</span>
+{{/if}}
+
