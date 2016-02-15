@@ -1,8 +1,9 @@
-<div class="createPipeline">
-  <dl>
-    <dt>title</dt><dd>{{input type="text" value=pipeline.title}}</dd>
-    <dt>description</dt><dd>{{textarea value=pipeline.description}}</dd>
-  </dl>
-
-  <button {{action "create"}}>Create</button>
-</div>
+{{#md-card title="New pipeline"}}
+  {{#md-card-content}}
+    {{input value=pipeline.title placeholder="Pipeline title"}}
+    {{textarea value=pipeline.description placeholder="Pipeline description"}}
+  {{/md-card-content}}
+  {{#md-card-action}}
+    {{md-btn-submit icon='mdi-action-save' iconPosition='right' text='Create' action="create"}}
+  {{/md-card-action}}
+{{/md-card}}
