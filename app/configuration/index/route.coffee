@@ -2,6 +2,7 @@
 
 ConfigurationIndexRoute = Ember.Route.extend
   activate: () ->
-    @transitionTo('configuration.pipelines')
+    Ember.run.next => @transitionTo('configuration.pipelines')
+
 
 `export default ConfigurationIndexRoute`
