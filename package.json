@@ -1,6 +1,6 @@
 {
   "name": "bde-pipeline-status",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Small description for bde-pipeline-status goes here",
   "private": true,
   "directories": {
